@@ -1,8 +1,8 @@
 import pandas as pd
 
-df = pd.read_csv('quotes.csv')
+df = pd.read_csv('main.csv')
 
 df_fraction = df.sample(frac = 0.2, random_state=1)
 
-df_fraction.to_csv('quotes_smaller_file.csv', index=False)
+df_fraction.to_csv('fraction_of_the_main.csv', index=False)
 
